@@ -1,0 +1,149 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Sidebar styles */
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #283046;
+  padding: 10px;
+  color: #fff;
+}
+
+.sidebar h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  display: block;
+  margin-bottom: 10px;
+  color: #fff;
+  padding: 10px;
+  border-left: 3px solid transparent;
+}
+
+.sidebar a:hover {
+  background-color: #1e2c3a;
+  border-left-color: #a1c181;
+}
+
+.sidebar a.active {
+  background-color: #1e2c3a;
+  border-left-color: #a1c181;
+}
+
+.sidebar i {
+  margin-right: 10px;
+}
+
+/* Content styles */
+.content {
+  margin-left: 200px;
+  padding: 10px;
+}
+
+.welcome-message {
+  text-align: right;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f1f1f1;
+}
+
+.new-button,
+.upload-button,
+.share-button {
+  background-color: #a1c181;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.new-button:hover,
+.upload-button:hover,
+.share-button:hover {
+  background-color: #8fb172;
+  cursor: pointer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.grid-item {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.projects h2,
+.announcements h2,
+.trending h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.announcement {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-left: 10px solid #a1c181;
+  margin-bottom: 20px;
+}
+
+.trending-item {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  font-size: 1.1em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  .content {
+    margin-left: 0;
+  }
+}
